@@ -9,6 +9,7 @@
                     return utils.getDate(); 
                 })()
             })
+            location.reload();
         }
     });
 })()
