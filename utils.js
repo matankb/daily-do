@@ -7,7 +7,7 @@
             return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toJSON().slice(0, 10) 
         },
         getThingValue: function() {
-            return thing.value;
+            return this.thing.value;
         },
         setThingValue: function() {
             chrome.storage.sync.set({
