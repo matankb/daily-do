@@ -3,7 +3,13 @@
     "name": "One Main Thing",
     "version": "0.1.0",
     
-    "default_locale": "en",
+    "author": "Matan Kotler-Berkowitz and Noam Raz",
     
-    "author": "Matan Kotler-Berkowitz",
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    },
+    
+    "permissions": [
+        "storage"
+    ]
 }
