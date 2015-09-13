@@ -63,6 +63,8 @@ html {
     opacity: 0;
     height: 100%;
     width: 100%;
+    
+    transition: opacity 500ms;
 }
 
 .edit-button {
@@ -79,7 +81,7 @@ html {
 
 #thing:focus + #edit-buttons-wrap {
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 500ms;
 }
 
 #prompt {
