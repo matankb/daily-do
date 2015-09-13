@@ -9,5 +9,12 @@
         getThingValue: function() {
             return thing.value;
         },
+        setThingValue: function() {
+            chrome.storage.sync.set({
+                thing: (function() {
+                   return utils.getThingValue(); 
+                })()
+            })
+        }
     }
 })()
