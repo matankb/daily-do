@@ -57,6 +57,28 @@ html {
     outline: 0;
 }
 
+#edit-buttons-wrap {
+    margin-top: 7%;
+    opacity: 0;
+}
+
+.edit-button {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    transition: opacity 500ms;
+}
+
+.edit-button:hover {
+    opacity: 0.9;
+    transition: opacity 500ms;
+}
+
+#thing:focus + #edit-buttons-wrap {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
 #prompt {
     font-size: large; 
 }
