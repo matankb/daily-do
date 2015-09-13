@@ -58,8 +58,11 @@ html {
 }
 
 #edit-buttons-wrap {
-    margin-top: 7%;
+    top: 15%;
+    position: relative;
     opacity: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .edit-button {
@@ -81,4 +84,29 @@ html {
 
 #prompt {
     font-size: large; 
+}
+
+#done-button {
+    border: none;
+    cursor: pointer;
+    
+    background-color: rgba(0, 147, 135, 0.5);
+    opacity: 0.5;
+    transition: opacity 500ms;
+    
+    padding: 10px;
+    left: 45%;
+    position: absolute;
+    top: 11.5%;
+    z-index: 10;
+    
+}
+
+#done-button:hover {
+    opacity: 1.0;
+    transition: opacity 500ms;
+}
+
+#done-button:focus {
+    outline: none;
 }
