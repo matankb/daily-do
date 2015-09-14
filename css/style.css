@@ -58,11 +58,12 @@ html {
 }
 
 #edit-buttons-wrap {
-    top: 15%;
+    top: 17px;
+    left: 608px;
     position: relative;
     opacity: 0;
-    height: 100%;
-    width: 100%;
+    /*height: 100%;
+    width: 100%;*/
     
     transition: opacity 500ms;
 }
@@ -70,18 +71,23 @@ html {
 .edit-button {
     width: 30px;
     height: 30px;
+    padding: 0;
+    border: 0;
     opacity: 0.5;
     transition: opacity 500ms;
 }
 
+.edit-button img {
+    width: 100%;
+    height: 100%;
+}
+
 .edit-button:hover {
     opacity: 0.9;
-    transition: opacity 500ms;
 }
 
 #thing:focus + #edit-buttons-wrap {
     opacity: 1;
-    transition: opacity 500ms;
 }
 
 #prompt {
