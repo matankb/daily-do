@@ -5,8 +5,17 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div id="background-wrap">
+            <img src="img/background1.jpg" id="background-image"> <!--note: using an image instead of css background-image for transparency-->
+        </div>
         <form id="thing-wrap">
-            <input type="text" id="thing">
+            <p id="prompt">My one main thing for today is...</p>
+            <button id="done-button" title="Done">I did my one main thing</button>
+            <input type="text" id="thing" autocomplete="off">
+            <div id="edit-buttons-wrap">
+                <button type="submit" class="edit-button"><img src="img/button/save.jpg" title="Save"></button>
+                <button type="reset" class="edit-button"><img src="img/button/cancel.jpg" title="Clear"></button>
+            </div>
         </form>
         <script src="js/utils.js"></script>
         <script src="js/date.js"></script>

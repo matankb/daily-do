@@ -3,9 +3,117 @@ html {
     width: 100%;
     height: 100%;
     
-    padding: none;
-    margin: none;
-    border: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
     
     font-family: sans-serif;
+}
+
+.background-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+#background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0.6;
+    
+    z-index: -100;
+}
+
+#thing-wrap {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    
+    width: 100%;
+    height: 100%;
+}
+
+#thing {
+    position: absolute;
+    height: 10%;
+    width: 50%;
+    
+    background: rgba(0, 0, 0, 0.03);
+    
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    
+    font-size: 300%;
+    color: rgba(0, 0, 0, 0.8);
+    
+    padding-left: 10px;
+}
+
+#thing:focus {
+    outline: 0;
+}
+
+#edit-buttons-wrap {
+    top: 17px;
+    left: 608px;
+    position: relative;
+    opacity: 0;
+    /*height: 100%;
+    width: 100%;*/
+    
+    transition: opacity 500ms;
+}
+
+.edit-button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 500ms;
+}
+
+.edit-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.edit-button:hover {
+    opacity: 0.9;
+}
+
+#thing:focus + #edit-buttons-wrap {
+    opacity: 1;
+}
+
+#prompt {
+    font-size: large; 
+}
+
+#done-button {
+    border: none;
+    cursor: pointer;
+    
+    background-color: rgba(0, 147, 135, 0.5);
+    font-size: 1.2em;
+    opacity: 0.5;
+    transition: opacity 500ms;
+    
+    padding: 10px;
+    position: absolute;
+    top: 23%;
+    
+}
+
+#done-button:hover {
+    opacity: 1.0;
+    transition: opacity 500ms;
+}
+
+#done-button:focus {
+    outline: none;
 }
