@@ -4,6 +4,7 @@
     "version": "0.1.0",
     
     "author": "Matan Kotler-Berkowitz and Noam Raz",
+    "description": "A simpler to-do list",
     
     "chrome_url_overrides" : {
         "newtab": "newtab.html"
