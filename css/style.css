@@ -2,11 +2,11 @@
 html {
     width: 100%;
     height: 100%;
-    
+
     padding: 0;
     margin: 0;
     border: 0;
-    
+
     font-family: sans-serif;
 }
 
@@ -19,12 +19,12 @@ html {
     position: absolute;
     left: 0;
     top: 0;
-    
+
     width: 100%;
     height: 100%;
-    
+
     opacity: 0.6;
-    
+
     z-index: -100;
 }
 
@@ -32,7 +32,7 @@ html {
     position: fixed;
     top: 30%;
     left: 25%;
-    
+
     width: 100%;
     height: 100%;
 }
@@ -41,15 +41,15 @@ html {
     position: absolute;
     height: 10%;
     width: 50%;
-    
+
     background: rgba(0, 0, 0, 0.03);
-    
+
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    
+
     font-size: 300%;
     color: rgba(0, 0, 0, 0.8);
-    
+
     padding-left: 10px;
 }
 
@@ -58,13 +58,13 @@ html {
 }
 
 #edit-buttons-wrap {
-    top: 17px;
-    left: 608px;
+    top: 3%;
+    left: 45%;
     position: relative;
     opacity: 0;
     /*height: 100%;
     width: 100%;*/
-    
+
     transition: opacity 500ms;
 }
 
@@ -91,22 +91,22 @@ html {
 }
 
 #prompt {
-    font-size: large; 
+    font-size: large;
 }
 
 #done-button {
     border: none;
     cursor: pointer;
-    
+
     background-color: rgba(0, 147, 135, 0.5);
     font-size: 1.2em;
     opacity: 0.5;
     transition: opacity 500ms;
-    
+
     padding: 10px;
     position: absolute;
     top: 23%;
-    
+
 }
 
 #done-button:hover {
