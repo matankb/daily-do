@@ -7,7 +7,7 @@
     "description": "A simpler to-do list",
 
     "chrome_url_overrides" : {
-        "newtab": "newtab.html"
+        "newtab": "newtab/newtab.html"
     },
 
     "permissions": [
@@ -20,7 +20,7 @@
     },
     "background": {
       "scripts": [
-        "js/oninstall.js"
+        "background/oninstall.js"
       ]
     }
 }
