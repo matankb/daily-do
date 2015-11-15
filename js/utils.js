@@ -31,6 +31,14 @@
             chrome.storage.sync.set({
                 done: false
             })
+        },
+        onInstall: {
+          setTutorialPlayed: function() {
+            chrome.storage.sync.set({
+                playedTutorial: true
+            })
+          },
         }
+
     }
 })()
