@@ -20,7 +20,7 @@
         setThingValue: function() {
             chrome.storage.sync.set({
                 thing: this.getThingValue()
-            })
+            });
         },
         setDone: function() {
             chrome.storage.sync.set({
