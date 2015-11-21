@@ -10,6 +10,7 @@ html {
     font-family: sans-serif;
 }
 
+body {overflow:hidden}
 .background-wrap {
     position: relative;
     overflow: hidden;
