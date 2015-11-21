@@ -9,7 +9,6 @@ html {
 
     font-family: sans-serif;
 }
-
 body {overflow:hidden}
 .background-wrap {
     position: relative;
@@ -118,3 +117,7 @@ body {overflow:hidden}
 #done-button:focus {
     outline: none;
 }
+/* Intro.js tooltips */
+.thing-wrap-tooltip { width: 750px !important; height: 220px !important; top: }
+.thing-tooltip { width: 300px !important; }
+.edit-buttons-wrap-tooltip {width: 80px !important; }
