@@ -1,4 +1,5 @@
-introJs()
+(function() {
+  introJs()
   .start()
   .onchange(function(targetElement)  {
     switch(this._currentStep) {
@@ -16,3 +17,4 @@ introJs()
   .oncomplete(function() {
     window.location = "../../newtab/newtab.html";
   });
+})();
