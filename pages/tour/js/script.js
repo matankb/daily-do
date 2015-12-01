@@ -16,9 +16,9 @@
     }
   })
   .onexit(function() {
-    window.location = "../../newtab/newtab.html";
+    window.location = "../newtab/newtab.html";
   })
   .oncomplete(function() {
-    window.location = "../../newtab/newtab.html";
+    window.location = "../newtab/newtab.html";
   });
 })();

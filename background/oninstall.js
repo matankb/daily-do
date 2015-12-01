@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(function() {
   chrome.tabs.create({
-    "url": "../welcome/welcome.html"
+    "url": "../pages/welcome/welcome.html"
   })
 })
