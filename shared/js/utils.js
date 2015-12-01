@@ -3,6 +3,11 @@
         thing: document.getElementById("thing"),
         thingWrap: document.getElementById("thing-wrap"),
         doneButton: document.getElementById("done-button"),
+        editControls: {
+          wrap: document.getElementById("edit-buttons-wrap"),
+          save: document.getElementsByClassName('edit-button')[0],
+          cancel: document.getElementsByClassName('edit-button')[1]
+        },
         hideThingWrap: function() {
             this.thingWrap.style.display = "none";
         },
@@ -20,7 +25,7 @@
         setThingValue: function() {
             chrome.storage.sync.set({
                 thing: this.getThingValue()
-            })
+            });
         },
         setDone: function() {
             chrome.storage.sync.set({
@@ -31,6 +36,14 @@
             chrome.storage.sync.set({
                 done: false
             })
+        },
+        onInstall: {
+          setTutorialPlayed: function() {
+            chrome.storage.sync.set({
+                playedTutorial: true
+            })
+          },
         }
+
     }
 })()

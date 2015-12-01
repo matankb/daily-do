@@ -7,14 +7,20 @@
     "description": "A simpler to-do list",
 
     "chrome_url_overrides" : {
-        "newtab": "newtab.html"
+        "newtab": "pages/newtab/newtab.html"
     },
 
     "permissions": [
-        "storage"
+        "storage",
+         "tabs"
     ],
 
     "icons": {
-        "128": "img/icon/icon128.png"
+        "128": "assets/icon/icon128.png"
+    },
+    "background": {
+      "scripts": [
+        "background/oninstall.js"
+      ]
     }
 }
