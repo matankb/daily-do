@@ -118,6 +118,12 @@ body {overflow:hidden}
     outline: none;
 }
 /* Intro.js tooltips */
+#step-1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+
+}
 .thing-wrap-tooltip { width: 750px !important; height: 220px !important; top: }
 .thing-tooltip { width: 300px !important; }
 .edit-buttons-wrap-tooltip {width: 80px !important; }
