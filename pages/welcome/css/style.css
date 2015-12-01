@@ -37,3 +37,31 @@ html {
   font-weight: normal;
   text-align: center;
 }
+
+.links {
+  text-align: center;
+}
+
+.links a {
+    border: none;
+    cursor: pointer;
+    color:black;
+    text-decoration: none;
+
+    background-color: rgba(0, 147, 135, 0.5);
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: opacity 500ms;
+
+    padding: 10px;
+
+}
+
+.links a:hover {
+    opacity: 1.0;
+    transition: opacity 500ms;
+}
+
+.links a:focus {
+    outline: none;
+}
