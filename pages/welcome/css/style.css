@@ -22,10 +22,16 @@ html {
 
     z-index: -100;
 }
+
 #oninstall, #onupdate {
   position: absolute;
-  width: 20%;
+  width: 50%;
   height: 20%;
   top: 30%;
-  right: 40%;
+  right: 25%;
+}
+
+.header h1 {
+  font-size: 3em;
+  font-weight: normal;
 }
