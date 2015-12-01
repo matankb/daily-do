@@ -3,6 +3,10 @@
         thing: document.getElementById("thing"),
         thingWrap: document.getElementById("thing-wrap"),
         doneButton: document.getElementById("done-button"),
+        editControls: {
+          save: document.getElementsByClassName('edit-button')[0],
+          cancel: document.getElementsByClassName('edit-button')[1]
+        },
         hideThingWrap: function() {
             this.thingWrap.style.display = "none";
         },
