@@ -4,6 +4,7 @@
         thingWrap: document.getElementById("thing-wrap"),
         doneButton: document.getElementById("done-button"),
         editControls: {
+          wrap: document.getElementById("edit-buttons-wrap"),
           save: document.getElementsByClassName('edit-button')[0],
           cancel: document.getElementsByClassName('edit-button')[1]
         },
