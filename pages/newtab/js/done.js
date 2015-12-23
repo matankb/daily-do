@@ -4,9 +4,9 @@
             utils.hideThingWrap();
         }
     });
-    
+
     utils.doneButton.onclick = function() {
         utils.setDone();
         utils.hideThingWrap();
-    }
-})()
+    };
+})();

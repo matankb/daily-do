@@ -7,10 +7,10 @@
             utils.setThingValue();
             chrome.storage.sync.set({ //and set stored date to current date
                 date: (function() {
-                    return utils.getDate(); 
+                    return utils.getDate();
                 })()
-            })
+            });
             location.reload();
         }
     });
-})()
+})();
