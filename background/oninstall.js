@@ -9,7 +9,7 @@ const defaults = {
     backgroundColor: '#c5cefa',
     doneButtonColor: '#009387'
   }
-}
+};
 
 function onInstalled(e) {
   if (e.reason === 'install') {
@@ -17,9 +17,9 @@ function onInstalled(e) {
     chrome.tabs.create({
       "url": `../pages/welcome/welcome.html?reason=install`
     })
-  } else if (e.reason === 'updated') {
+  } else if (e.reason === 'update') {
     chrome.storage.local.set({ updated: true });
   }
 }
 
-chrome.runtime.onInstalled.addListener(onInstalled)
+chrome.runtime.onInstalled.addListener(onInstalled);
