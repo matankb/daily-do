@@ -41,6 +41,23 @@
     }
   })
 
+  // SETTINGS
+  storage.get('options').then(options => {
+
+    function hexToRgba(hex) {
+  		var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+   	  var rgb = result ? {
+  			r: parseInt(result[1], 16),
+  			g: parseInt(result[2], 16),
+  			b: parseInt(result[3], 16)
+  		} : null;
+  		return `rgba(${rgb.r},${rgb.g},${rgb.b}, 0.5)`;
+  	}
+
+    document.body.style.backgroundColor = options.backgroundColor
+    document.getElementById('done-button').style.backgroundColor = hexToRgba(options.doneButtonColor);
+
+  })
 
   // UPDATE
   chrome.storage.local.get('updated', updated => {

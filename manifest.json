@@ -12,15 +12,23 @@
 
     "permissions": [
         "storage",
-         "tabs"
+        "tabs"
     ],
 
     "icons": {
         "128": "assets/icon/icon128.png"
     },
+
     "background": {
       "scripts": [
         "background/oninstall.js"
       ]
+    },
+
+    "options_ui": {
+      "page": "pages/options/options.html",
+      "chrome_style": true,
+      "open_in_tab": false
     }
+    
 }
