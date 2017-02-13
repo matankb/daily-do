@@ -42,4 +42,14 @@
   })
 
 
+  // UPDATE
+  chrome.storage.local.get('updated', updated => {
+    if (updated.updated) {
+      chrome.storage.local.set({ updated: false});
+      let version = chrome.runtime.getManifest();
+      document.getElementById('update').style.display = 'block';
+    }
+  })
+
+
 }());

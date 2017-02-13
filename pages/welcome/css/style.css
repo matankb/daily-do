@@ -23,7 +23,7 @@ html {
     z-index: -100;
 }
 
-#oninstall, #onupdate {
+#oninstall {
   position: absolute;
   width: 50%;
   height: 20%;
