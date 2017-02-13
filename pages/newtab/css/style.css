@@ -1,5 +1,5 @@
 /*Resets*/
-html {
+body, html {
     width: 100%;
     height: 100%;
 
@@ -9,6 +9,8 @@ html {
 
     font-family: sans-serif;
 }
+
+/* Background */
 
 .background-wrap {
     position: relative;
@@ -28,19 +30,29 @@ html {
     z-index: -100;
 }
 
-#thing-wrap {
-    position: fixed;
-    top: 30%;
-    left: 25%;
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 57%;
+  height: 250px;
+
+  margin: auto;
+}
+
+#thing-wrap {
+    display: none;
 }
 
 #thing {
-    position: absolute;
-    height: 10%;
-    width: 50%;
+
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
 
     background: rgba(0, 0, 0, 0.03);
 
@@ -50,7 +62,6 @@ html {
     font-size: 300%;
     color: rgba(0, 0, 0, 0.8);
 
-    padding-left: 10px;
 }
 
 #thing:focus {
@@ -58,21 +69,23 @@ html {
 }
 
 #edit-buttons-wrap {
-    top: 3%;
-    left: 45%;
-    position: relative;
-    opacity: 0;
-    /*height: 100%;
-    width: 100%;*/
+    position: absolute;
+    top: calc(50% - 48px);  /* Center vertically */
+    right: 30px;
 
+    display: inline-block;
+
+    opacity: 0;
     transition: opacity 500ms;
 }
 
 .edit-button {
     width: 30px;
     height: 30px;
-    padding: 0;
+
     border: 0;
+    padding: 0;
+
     opacity: 0.5;
     transition: opacity 500ms;
 }
@@ -96,16 +109,13 @@ html {
 
 #done-button {
     border: none;
-    cursor: pointer;
+    padding: 10px;
 
+    cursor: pointer;
     background-color: rgba(0, 147, 135, 0.5);
     font-size: 1.2em;
     opacity: 0.5;
     transition: opacity 500ms;
-
-    padding: 10px;
-    position: absolute;
-    top: 23%;
 
 }
 
