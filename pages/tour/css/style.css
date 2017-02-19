@@ -1,5 +1,5 @@
 /*Resets*/
-html {
+body, html {
     width: 100%;
     height: 100%;
 
@@ -7,13 +7,15 @@ html {
     margin: 0;
     border: 0;
 
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    background-color: #c5cefa;
 }
-body {overflow:hidden}
+
 .background-wrap {
     position: relative;
     overflow: hidden;
 }
+
 
 #background-image {
     position: absolute;
@@ -28,29 +30,32 @@ body {overflow:hidden}
     z-index: -100;
 }
 
-#thing-wrap {
-    position: fixed;
-    top: 30%;
-    left: 25%;
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 57%;
+  height: 250px;
+
+  margin: auto;
 }
 
 #thing {
-    position: absolute;
-    height: 10%;
-    width: 50%;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
 
-    background: rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, 0.03);
 
-    border: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 
-    font-size: 300%;
-    color: rgba(0, 0, 0, 0.8);
-
-    padding-left: 10px;
+  font-size: 300%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #thing:focus {
@@ -58,23 +63,25 @@ body {overflow:hidden}
 }
 
 #edit-buttons-wrap {
-    top: 3%;
-    left: 45%;
-    position: relative;
-    opacity: 0;
-    /*height: 100%;
-    width: 100%;*/
+  position: absolute;
+  top: calc(50% - 48px);  /* Center vertically */
+  right: 30px;
 
-    transition: opacity 500ms;
+  display: inline-block;
+
+  opacity: 0;
+  transition: opacity 500ms;
 }
 
 .edit-button {
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border: 0;
-    opacity: 0.5;
-    transition: opacity 500ms;
+  width: 30px;
+  height: 30px;
+
+  border: 0;
+  padding: 0;
+
+  opacity: 0.5;
+  transition: opacity 500ms;
 }
 
 .edit-button img {
@@ -95,18 +102,14 @@ body {overflow:hidden}
 }
 
 #done-button {
-    border: none;
-    cursor: pointer;
+  border: none;
+  padding: 10px;
 
-    background-color: rgba(0, 147, 135, 0.5);
-    font-size: 1.2em;
-    opacity: 0.5;
-    transition: opacity 500ms;
-
-    padding: 10px;
-    position: absolute;
-    top: 23%;
-
+  cursor: pointer;
+  background-color: rgba(0, 147, 135, 0.5);
+  font-size: 1.2em;
+  opacity: 0.5;
+  transition: opacity 500ms;
 }
 
 #done-button:hover {
@@ -117,6 +120,7 @@ body {overflow:hidden}
 #done-button:focus {
     outline: none;
 }
+
 /* Intro.js tooltips */
 #step-1 {
   position: absolute;
@@ -125,5 +129,11 @@ body {overflow:hidden}
 
 }
 .thing-wrap-tooltip { width: 750px !important; height: 220px !important; top: }
-.thing-tooltip { width: 300px !important; }
+.thing-tooltip { width: 710px !important; }
 .edit-buttons-wrap-tooltip {width: 80px !important; }
+.clear { opacity: 0.5 !important }
+
+.introjs-overlay, .introjs-helperLayer  { pointer-events: none }
+.introjs-overlay {
+  background: transparent !important;
+}

@@ -1,13 +1,17 @@
 (function() {
   introJs()
   .start()
+  .setOption('exitOnOverlayClick', false)
+  .setOption('disableInteraction', false)
   .onchange(function(targetElement)  {
     switch(this._currentStep) {
       case 3:
         //show edit controls
-        utils.editControls.wrap.style.opacity = 1.0;
+        document.getElementById('edit-buttons-wrap').style.opacity = 1.0;
         //and put text in thing if empty
-        if(!utils.thing.value) utils.thing.value = "Go to the Gym";
+        if(!document.getElementById('thing').value) {
+          document.getElementById('thing').value = "Go to the Gym";
+        }
         break;
       case 2:
         break;
