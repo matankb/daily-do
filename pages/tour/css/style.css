@@ -128,8 +128,8 @@ body, html {
   left: 40%;
 
 }
-.thing-wrap-tooltip { width: 750px !important; height: 220px !important; top: }
-.thing-tooltip { width: 710px !important; }
+.thing-wrap-tooltip { width: 805px !important; height: 220px !important; top: }
+.thing-tooltip { width: 805px !important; }
 .edit-buttons-wrap-tooltip {width: 80px !important; }
 .clear { opacity: 0.5 !important }
 
