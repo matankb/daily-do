@@ -13,7 +13,11 @@ const defaults = {
 
 function onInstalled(e) {
   if (e.reason === 'install') {
-    chrome.storage.sync.set(defaults);
+    chrome.storage.sync.get('options', ({ options }) => {
+      if (!options) {
+        chrome.storage.sync.set({ options: defaults.options });
+      }
+    })
     chrome.tabs.create({
       "url": `../pages/welcome/welcome.html?reason=install`
     })
