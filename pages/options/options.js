@@ -1,7 +1,14 @@
+const options = {
+	backgroundColor: ['background-color', '#c5cefa'],
+	doneButtonColor: ['done-button-color', '#009387'],
+}
+
 function setValues() {
-	chrome.storage.sync.get('options', ({ options }) => {
-		document.getElementById('background-color').value = options.backgroundColor;
-		document.getElementById('done-button-color').value = options.doneButtonColor;
+	chrome.storage.sync.get('options', opts => {
+		opts = opts.options;
+		for (let i in options) {
+			document.getElementById(options[i][0]).value = opts[i];
+		}
 	})
 }
 
@@ -24,17 +31,20 @@ function submit(e) {
 }
 
 function resetValues() {
-	document.getElementById('background-color').value = '#c5cefa';
-	document.getElementById('done-button-color').value = '#009387';
+	for (let i in options) {
+		document.getElementById(options[i][0]).value = options[i][1];
+	}
 	submit({ preventDefault: () => {} });
 }
 
 setValues();
 
 function getUpdatedValues() {
-  let backgroundColor = document.getElementById('background-color').value;
-  let doneButtonColor = document.getElementById('done-button-color').value;
-  return { backgroundColor, doneButtonColor };
+	let values = {};
+	for (let i in options) {
+		values[i] = document.getElementById(options[i][0]).value;
+	}
+  return values;
 }
 
 document.getElementById('reset').onclick = resetValues;
