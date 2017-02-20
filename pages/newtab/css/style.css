@@ -70,7 +70,7 @@ body, html {
 
 #edit-buttons-wrap {
     position: absolute;
-    top: calc(50% - 48px);  /* Center vertically */
+    top: calc(50% - 40px);  /* Center vertically */
     right: 30px;
 
     display: inline-block;
