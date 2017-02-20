@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "One Main Thing",
     "version": "0.3.0",
+    "name": "Daily Do",
 
     "author": "Matan Kotler-Berkowitz and Noam Raz",
-    "description": "A simpler to-do list",
+    "description": "Get it done - today",
 
     "chrome_url_overrides" : {
         "newtab": "pages/newtab/newtab.html"
@@ -30,5 +30,5 @@
       "chrome_style": true,
       "open_in_tab": false
     }
-    
+
 }

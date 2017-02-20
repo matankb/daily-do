@@ -136,3 +136,10 @@ body, html {
   font-size: 1.2em;
   font-family: sans-serif;
 }
+
+#prompt img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+}
