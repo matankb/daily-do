@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "version": "0.3.0",
     "name": "Daily Do",
+    "version": "0.4.0",
 
     "author": "Matan Kotler-Berkowitz and Noam Raz",
     "description": "Get it done - today",
